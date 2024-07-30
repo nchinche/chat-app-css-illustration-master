@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+@media (max-width: 1440px) {
+    
+
+
+
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+height: 100vh;
+background-color: hsl(270, 20%, 96%);
+}
+
+
+
+.half-background {
+    position: fixed;
+    top: 0;
+    bottom: 100px;
+    
+    left: 0;
+    width: 32%;
+    background-color:  hsl(276, 55%, 52%) ;
+    z-index: -1;
+    border-radius: 0 0 300px 130px;
+}
+
+
+
+
+
+.container{
+width: 800px;
+height: 550px;
+background-color:  transparent;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 27px;
+margin: 20px 0;
+}
+
+.header{
+    margin-bottom: 20px;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(to right, hsl(276, 55%, 52%), hsl(293, 100%, 63%));
+    border-radius: 20px 20px 7px 7px;
+    
+}
+
+.user-one{
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 240px;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.back-chevron .bi{ 
+    font-family: cursive;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.user-details{
+  margin: 0 12px;  
+}
+
+.user h1{
+ font-size: 16px;
+ color: hsl(270, 20%, 96%);
+}
+
+.user p{
+    font-size: 11px;
+    color: hsl(206, 6%, 79%);
+}
+
+
+.user img{ 
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.menu-icon .bi{
+    color: hsl(0, 0%, 100%);
+}
+
+.phone-section{
+    width: 263px;
+    padding:0 5px;
+}
+
+.middle-space{
+    width: 160px;
+    height: 25px;
+    border-radius: 0 0 15px 15px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 50px;
+    
+}
+
+
+.me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    background-color: hsl(206, 6%, 79%) ;
+    margin: 8px 0;
+    border-radius:  10px 10px 10px 0px;
+}
+
+.me p{
+    
+font-size: 10px;
+color:  hsl(276, 55%, 52%);
+width: 120px;
+line-height: 14px;
+}
+
+
+
+
+
+.main-Phone{
+    border-radius: 27px;
+    width: 280px;
+    border: 8px solid  hsl(0, 0%, 100%);
+    background-color: hsl(270, 20%, 96%);
+    height: 550px;
+    box-shadow: 15px 15px 25px 0px rgb(191, 206, 207);
+}
+
+.custom-radio input {
+    display: none;
+}
+
+
+
+.custom-radio  .radio-button{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: block;
+    margin-right: 8px;
+    position: relative;
+    background-color:  transparent;
+    border: 0.2px solid hsl(289, 100%, 72%);
+
+}
+
+
+
+
+.prix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius:  10px 10px 10px 0px;
+    width: 180px;
+    height: 35px;
+    margin: 8px 0;
+}
+
+
+.main-prix{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
+
+
+
+
+.prix input{
+    width: 20px;
+    height: 20px;
+   margin-right: 8px;
+}
+
+
+
+.prix p{
+    color: hsl(270, 20%, 96%);
+    font-size: 10px;
+   
+}
+
+
+.prix h2{
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+   margin-left:  30px 
+   
+}
+
+
+
+.dog-message{
+    display: flex;
+    align-items: flex-end;
+   flex-direction: column;
+}
+
+
+
+.dog-message p{
+font-size: 10px;
+color: hsl(271, 15%, 43%);
+width: 120px;
+}
+
+
+
+.dog-message .out{ 
+    padding: 5px 15px;
+    width: 130px;
+    height: 35px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 4px 0;
+    border-radius:  10px 10px 0px 10px;
+}
+
+
+.dog-message .out-1{
+    padding: 7px 15px;
+    width: 100px;
+    height: 25px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 4px 0;
+    border-radius:  10px 10px 0px 10px;
+}
+
+
+
+.dog-images img{
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.messenger-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+
+
+.messenger-input input{
+    width: 240px;
+    height: 30px;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    border: transparent;
+    outline: none;
+    padding-left: 20px;
+
+}
+
+.messenger-input button{
+    width: 30px;
+    height: 30px;
+    border-left: none;
+    border-radius: 0px 10px 10px 0;
+    border: transparent;
+   background-color: hsl(0, 0%, 100%);;
+}
+
+::placeholder{
+    color: hsl(206, 6%, 79%);
+    font-size: 12px;
+    
+}
+
+button .bi {
+font-size: 16px;
+background-color: hsl(271, 36%, 24%);
+width: 25px;
+height: 25px;
+border-radius: 50%;
+color: azure;
+padding: 4px  5px;
+margin-right: 5px;
+}
+
+
+
+
+.booking-section{
+    width: 420px;
+}
+
+
+.head-title h2{
+    font-size: 40px;
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 30px;
+}
+
+
+.paragraph{
+    font-size: 16px;
+    line-height: 25px;
+    color: hsl(289, 100%, 72%);
+}
+
+
+.attribution {
+ font-size: 20px;
+ text-align: center; 
+}
+
+
+    .attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+
+     }
+
+
+     @media (max-width: 375px) {
+        
+ html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+ }
+
+
+
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 130vh;
+            background-color: hsl(270, 20%, 96%);
+            }
+            
+
+
+
+   
+.half-background {
+    position: fixed;
+    top: 0;
+    bottom: 100px;
+    left: 0;
+    width: 50%;
+    background-color: hsl(264, 100%, 61%);
+    z-index: -1;
+    border-radius: 0 0 500px 0;
+}     
+
+
+
+.container{
+    width: 600px;
+    height: 730px;
+    background-color:  transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 27px;
+    margin: 30px 0;
+    }
+
+
+    .header{
+        margin-bottom: 10px;
+        height: 80px;
+        width: 100%;
+        background: linear-gradient(to right, hsl(276, 55%, 52%), hsl(293, 100%, 63%));
+        border-radius: 20px 20px 7px 7px;
+        
+    }
+
+    
+.main-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 200px;
+
+}
+
+    
+.middle-space{
+    width: 140px;
+    height: 25px;
+    border-radius: 0 0 15px 15px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 40px;
+    
+}
+
+
+
+
+    
+.main-Phone{
+    border-radius: 27px;
+    width: 240px;
+    border: 8px solid  hsl(0, 0%, 100%);
+    background-color: hsl(270, 20%, 96%);
+    height: 480px;
+    box-shadow: 15px 15px 25px 0px rgb(191, 206, 207);
+}
+
+
+.me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 43px;
+    background-color: hsl(206, 6%, 79%) ;
+    margin: 6px 0;
+    border-radius:  10px 10px 10px 0px;
+}
+
+.me p{
+    
+font-size: 10px;
+color:  hsl(276, 55%, 52%);
+width: 120px;
+line-height: 12px;
+}
+
+
+
+
+.dog-message{
+    display: flex;
+    margin-right: 40px;
+   flex-direction: column;
+}
+
+
+
+.dog-message p{
+    font-size: 10px;
+    color: hsl(271, 15%, 43%);
+    width: 120px;
+    }
+    
+    
+    
+    .dog-message .out{ 
+        padding: 5px 15px;
+        width: 130px;
+        height: 35px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 4px 0;
+        border-radius:  10px 10px 0px 10px;
+    }
+    
+    
+    .dog-message .out-1{
+        padding: 7px 15px;
+        width: 100px;
+        height: 25px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 4px 0;
+        border-radius:  10px 10px 0px 10px;
+    }
+    
+    
+    
+    .dog-images img{
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 2px;
+    }
+    
+    .messenger-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 36px 0 0;
+    }
+    
+    
+    .messenger-input input{
+        width: 170px;
+        height: 30px;
+        border-right: none;
+        border-radius: 10px 0px 0px 10px;
+        border: transparent;
+        outline: none;
+        padding-left: 20px;
+    
+    }
+    
+    .messenger-input button{
+        width: 30px;
+        height: 30px;
+        border-left: none;
+        border-radius: 0px 10px 10px 0;
+        border: transparent;
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+
+    
+.prix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius:  10px 10px 10px 0px;
+    width: 150px;
+    height: 25px;
+    margin: 8px 0;
+}
+
+
+.main-prix{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110px;
+}
+
+
+
+
+
+
+.custom-radio input {
+    display: none;
+}
+
+
+
+.custom-radio  .radio-button{
+    width: 12px;
+    height: 12px;
+    /*border: 2px solid #ccc;*/
+    border-radius: 50%;
+    display: block;
+    margin-right: 8px;
+    position: relative;
+    background-color:  transparent;
+    border: 0.2px solid hsl(289, 100%, 72%);
+
+}
+
+
+.prix p{
+    color: hsl(270, 20%, 96%);
+    font-size: 8px;
+   
+}
+
+
+.prix h2{
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+   margin-left:  30px 
+   
+}
+
+
+
+
+.booking-section{
+    width: 258px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+.head-title h2{
+    font-size: 35px;
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 20px;
+}
+
+
+.paragraph{
+    font-size: 15px;
+    line-height: 25px;
+    color: hsl(289, 100%, 72%);
+}
+
+
+.attribution {
+ font-size: 12px;
+ text-align: center; 
+}
+
+
+    .attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+
+
+     }
+  </style>
+</head>
+<body>
+  
+  <div class="half-background"></div>
+<div class="container">
+
+
+  <div class="main-Phone">
+    
+<div class="header">
+  <div class="middle-space"></div>
+  <div class="user-one">
+  <div class="main-user">
+  <div class="user">
+    <div class="back-chevron"><i class="bi bi-chevron-compact-left"></i></div>
+    
+    <img src="images/avatar.jpg" alt="">
+    <div class="user-details">
+  <h1>Samuel Green</h1>
+  <p>Available to Walk</p>
+    </div>
+  </div>
+    <div class="menu-icon"><i class="bi bi-three-dots-vertical"></i></div>
+  </div>
+  </div>
+</div>
+
+
+<div class="phone-section">
+
+<div class="me">
+  <p>That sounds great. I’d be happy with that.</p>
+</div>
+
+<div class="me">
+  <p>Could you send over some pictures of your dog, please?</p>
+</div>
+
+  <div class="dog-message">
+ <div class="dog-images">
+   <img src="images/dog-image-1.jpg" alt="">
+   <img src="images/dog-image-2.jpg" alt="">
+   <img src="images/dog-image-3.jpg" alt="">
+ </div>
+
+
+ 
+  <div class="out">
+   <p>are a few pictures. She’s a happy girl!</p>
+  </div>
+  
+  <div class="out-1">
+   <p>Can you make it?</p>
+  </div>
+
+
+  </div>
+
+
+
+
+
+  <div class="me">
+  <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+  </div>
+
+  
+
+  <div class="prix ">
+    <label class="custom-radio">
+    <input type="radio" name="color" value="blue">
+    <span class="radio-button"></span>
+    </label>
+    <div class="main-prix">
+  <p>30 minute walk</p>
+  <h2>$29</h2>
+  </div>
+  </div>
+
+
+  <div class="prix"> 
+    <label class="custom-radio">
+    <input type="radio" name="color" value="blue">
+    <span class="radio-button"></span>
+    </label>
+    <div class="main-prix">
+  <p>1 hour walk</p>
+  <h2>$49</h2>
+    </div>
+  </div>
+
+  <div class="messenger-input">
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button><i class="bi bi-chevron-right"></i></button>
+</div>
+</div>
+  </div>
+
+  <div class="booking-section">
+    <div class="head-title">
+  <h2>Simple booking</h2>
+    </div>
+
+    <div class="paragraph">
+  <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+  discuss arrangements and make bookings. Once the walk has been completed you can rate 
+  your walker and book again all through the chat.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> 
+    Coded by <a href="https://github.com/nchinche">Nchinche Pascal.</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,651 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,700;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+@media (max-width: 1440px) {
+    
+
+
+
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+height: 100vh;
+background-color: hsl(270, 20%, 96%);
+}
+
+
+
+.half-background {
+    position: fixed;
+    top: 0;
+    bottom: 220px;
+    left: 0;
+    width: 32%;
+    background-color:/* hsl(264, 100%, 61% )*/hsl(276, 55%, 52%);
+    z-index: -1;
+    border-radius: 0 0 300px 130px;
+}
+
+
+
+
+
+.container{
+width: 800px;
+height: 550px;
+background-color:  transparent;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 27px;
+margin: 20px 0;
+}
+
+.header{
+    margin-bottom: 20px;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(to right, hsl(276, 55%, 52%), hsl(293, 100%, 63%));
+    border-radius: 20px 20px 7px 7px;
+    
+}
+
+.user-one{
+    display: flex;
+    justify-content: center;
+
+}
+
+.main-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 240px;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.back-chevron .bi{ 
+    font-family: cursive;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.user-details{
+  margin: 0 12px;  
+}
+
+.user h1{
+ font-size: 16px;
+ color: hsl(270, 20%, 96%);
+}
+
+.user p{
+    font-size: 11px;
+    color: hsl(206, 6%, 79%);
+}
+
+
+.user img{ 
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.menu-icon .bi{
+    color: hsl(0, 0%, 100%);
+}
+
+.phone-section{
+    width: 263px;
+    padding:0 5px;
+}
+
+.middle-space{
+    width: 160px;
+    height: 25px;
+    border-radius: 0 0 15px 15px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 50px;
+    
+}
+
+
+.me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    background-color: hsl(206, 6%, 79%) ;
+    margin: 8px 0;
+    border-radius:  10px 10px 10px 0px;
+}
+
+.me p{
+    
+font-size: 10px;
+color:  hsl(276, 55%, 52%);
+width: 120px;
+line-height: 14px;
+}
+
+
+
+
+
+.main-Phone{
+    border-radius: 27px;
+    width: 280px;
+    border: 8px solid  hsl(0, 0%, 100%);
+    background-color: hsl(270, 20%, 96%);
+    height: 550px;
+    box-shadow: 15px 15px 25px 0px rgb(191, 206, 207);
+}
+
+.custom-radio input {
+    display: none;
+}
+
+
+
+.custom-radio  .radio-button{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: block;
+    margin-right: 8px;
+    position: relative;
+    background-color:  transparent;
+    border: 0.2px solid hsl(289, 100%, 72%);
+
+}
+
+
+
+
+.prix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius:  10px 10px 10px 0px;
+    width: 180px;
+    height: 35px;
+    margin: 8px 0;
+}
+
+
+.main-prix{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
+
+
+
+
+.prix input{
+    width: 20px;
+    height: 20px;
+   margin-right: 8px;
+}
+
+
+
+.prix p{
+    color: hsl(270, 20%, 96%);
+    font-size: 10px;
+   
+}
+
+
+.prix h2{
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+   margin-left:  30px 
+   
+}
+
+
+
+.dog-message{
+    display: flex;
+    align-items: flex-end;
+   flex-direction: column;
+}
+
+
+
+.dog-message p{
+font-size: 10px;
+color: hsl(271, 15%, 43%);
+width: 120px;
+}
+
+
+
+.dog-message .out{ 
+    padding: 5px 15px;
+    width: 130px;
+    height: 35px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 4px 0;
+    border-radius:  10px 10px 0px 10px;
+}
+
+
+.dog-message .out-1{
+    padding: 7px 15px;
+    width: 100px;
+    height: 25px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 4px 0;
+    border-radius:  10px 10px 0px 10px;
+}
+
+
+
+.dog-images img{
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.messenger-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0;
+}
+
+
+.messenger-input input{
+    width: 240px;
+    height: 30px;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    border: transparent;
+    outline: none;
+    padding-left: 20px;
+
+}
+
+
+.messenger-input button{
+    width: 30px;
+    height: 30px;
+    border-left: none;
+    border-radius: 0px 10px 10px 0;
+    border: transparent;
+   background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+::placeholder{
+    color: hsl(206, 6%, 79%);
+    font-size: 12px;
+    
+}
+
+button .bi {
+    font-size: 16px;
+    background-color: hsl(271, 36%, 24%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: azure;
+    padding: 4px  5px;
+    margin-right: 5px;
+    }
+    
+    
+
+
+
+.booking-section{
+    width: 380px;
+}
+
+
+.head-title h2{
+    font-size: 40px;
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 30px;
+}
+
+
+.paragraph{
+    font-size: 16px;
+    line-height: 25px;
+    color: hsl(289, 100%, 72%);
+}
+
+
+.attribution {
+ font-size: 20px;
+ text-align: center; 
+}
+
+
+    .attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+
+     }
+
+
+     @media (max-width: 375px) {
+        
+ html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+ }
+
+
+
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 130vh;
+            background-color: hsl(270, 20%, 96%);
+            }
+            
+
+
+
+   
+.half-background {
+    position: fixed;
+    top: 0;
+    bottom: 220px;
+    left: 0;
+    width: 50%;
+    background-color: hsl(264, 100%, 61%);
+    z-index: -1;
+    border-radius: 0 0 500px 0;
+    
+}     
+
+
+
+.container{
+    width: 600px;
+    height: 730px;
+    background-color:  transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 27px;
+    margin: 30px 0;
+    }
+
+
+    .header{
+        margin-bottom: 10px;
+        height: 80px;
+        width: 100%;
+        background: linear-gradient(to right, hsl(276, 55%, 52%), hsl(293, 100%, 63%));
+        border-radius: 20px 20px 7px 7px;
+        
+    }
+
+    
+.main-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 200px;
+
+}
+
+    
+.middle-space{
+    width: 140px;
+    height: 25px;
+    border-radius: 0 0 15px 15px;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 40px;
+    
+}
+
+
+
+
+    
+.main-Phone{
+    border-radius: 27px;
+    width: 240px;
+    border: 8px solid  hsl(0, 0%, 100%);
+    background-color: hsl(270, 20%, 96%);
+    height: 480px;
+    box-shadow: 15px 15px 25px 0px rgb(191, 206, 207);
+}
+
+
+.me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 43px;
+    background-color: hsl(206, 6%, 79%) ;
+    margin: 6px 0;
+    border-radius:  10px 10px 10px 0px;
+}
+
+.me p{
+    
+font-size: 10px;
+color:  hsl(276, 55%, 52%);
+width: 120px;
+line-height: 12px;
+}
+
+
+
+
+.dog-message{
+    display: flex;
+    margin-right: 40px;
+   flex-direction: column;
+}
+
+
+
+.dog-message p{
+    font-size: 10px;
+    color: hsl(271, 15%, 43%);
+    width: 120px;
+    }
+    
+    
+    
+    .dog-message .out{ 
+        padding: 5px 15px;
+        width: 130px;
+        height: 35px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 4px 0;
+        border-radius:  10px 10px 0px 10px;
+    }
+    
+    
+    .dog-message .out-1{
+        padding: 7px 15px;
+        width: 100px;
+        height: 25px;
+        background-color: hsl(0, 0%, 100%);
+        margin: 4px 0;
+        border-radius:  10px 10px 0px 10px;
+    }
+    
+    
+    
+    .dog-images img{
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 2px;
+    }
+    
+    .messenger-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 36px 0 0;
+    }
+    
+    
+    .messenger-input input{
+        width: 170px;
+        height: 30px;
+        border-right: none;
+        border-radius: 10px 0px 0px 10px;
+        border: transparent;
+        outline: none;
+        padding-left: 20px;
+    
+    }
+    
+    .messenger-input button{
+        width: 30px;
+        height: 30px;
+        border-left: none;
+        border-radius: 0px 10px 10px 0;
+        border: transparent;
+        background-color: hsl(0, 0%, 100%);
+    }
+    
+
+    
+.prix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius:  10px 10px 10px 0px;
+    width: 150px;
+    height: 25px;
+    margin: 8px 0;
+}
+
+
+.main-prix{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110px;
+}
+
+
+
+
+
+
+.custom-radio input {
+    display: none;
+}
+
+
+
+.custom-radio  .radio-button{
+    width: 12px;
+    height: 12px;
+    /*border: 2px solid #ccc;*/
+    border-radius: 50%;
+    display: block;
+    margin-right: 8px;
+    position: relative;
+    background-color:  transparent;
+    border: 0.2px solid hsl(289, 100%, 72%);
+
+}
+
+
+.prix p{
+    color: hsl(270, 20%, 96%);
+    font-size: 8px;
+   
+}
+
+
+.prix h2{
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+   margin-left:  30px 
+   
+}
+
+
+
+
+.booking-section{
+    width: 258px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+.head-title h2{
+    font-size: 35px;
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 20px;
+}
+
+
+.paragraph{
+    font-size: 15px;
+    line-height: 25px;
+    color: hsl(289, 100%, 72%);
+}
+
+
+.attribution {
+ font-size: 12px;
+ text-align: center; 
+}
+
+
+    .attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+
+
+     }
